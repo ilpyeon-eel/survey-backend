@@ -50,6 +50,6 @@ jobs:
             docker rm survey-server || true
             docker rmi $(docker images ${{ secrets.DOCKER_REPO }} -q) || true
             docker pull ${{ secrets.DOCKER_REPO }}
-            docker run -d -p 8080 --name survey-server ${{ secrets.DOCKER_REPO }} --network eelnetwork --env-file $HOME/config/.env
+            docker run -d -p 8080 --network eelnetwork --env-file $HOME/config/.env --name survey-server ${{ secrets.DOCKER_REPO }} 
 
             
