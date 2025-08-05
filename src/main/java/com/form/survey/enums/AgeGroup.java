@@ -8,11 +8,11 @@ import java.util.Arrays;
 
 @Getter
 public enum AgeGroup {
-    UNDER_20("20미만"),
+    UNDER_20("20 미만"),
     TWENTIES("20-30"),
     THIRTIES("31-40"),
-    FORTIES("41 ~ 50"),
-    FIFTIES("51 ~ 60"),
+    FORTIES("41-50"),
+    FIFTIES("51-60"),
     OVER_60("61 이상");
 
     private final String displayName;
